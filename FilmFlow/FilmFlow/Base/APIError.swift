@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class ApiError: Codable, Error {
+final class APIError: Codable, Error {
 
     let localizedMessage: String?
     let errorCode: String?

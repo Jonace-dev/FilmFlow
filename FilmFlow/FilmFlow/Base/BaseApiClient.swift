@@ -85,7 +85,7 @@ class BaseApiClient {
         var baseError: BaseError?
         
         if error != nil {
-            baseError = BaseError.API(ApiError(errorCode: "\(errorCode)", localizedMessage: error?.localizedDescription))
+            baseError = BaseError.API(APIError(errorCode: "\(errorCode)", localizedMessage: error?.localizedDescription))
         }
         
         return baseError

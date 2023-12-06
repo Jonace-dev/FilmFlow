@@ -25,7 +25,7 @@ enum BaseError: Error {
     case otpInvalid
     case otpValid
     case passwordExpired
-    case API(ApiError)
+    case API(APIError)
 
     func description() -> String {
         
@@ -51,7 +51,7 @@ enum BaseError: Error {
 
     }
     
-    private func getAPIDescription(apiError: ApiError) -> String {
+    private func getAPIDescription(apiError: APIError) -> String {
         return apiError.localizedMessage ?? "error_generic"
     }
     
