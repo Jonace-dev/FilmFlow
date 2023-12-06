@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-@main
+//Not using as main
 struct FilmFlowApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeWireframe().homeView
         }
     }
 }
