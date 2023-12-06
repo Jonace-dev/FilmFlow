@@ -14,6 +14,8 @@
 		88083CF22B20C76C00B479EE /* FilmFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88083CF12B20C76C00B479EE /* FilmFlowTests.swift */; };
 		88083CFC2B20C76C00B479EE /* FilmFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88083CFB2B20C76C00B479EE /* FilmFlowUITests.swift */; };
 		88083CFE2B20C76C00B479EE /* FilmFlowUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88083CFD2B20C76C00B479EE /* FilmFlowUITestsLaunchTests.swift */; };
+		88083D132B20C97400B479EE /* Profile in Resources */ = {isa = PBXBuildFile; fileRef = 88083D112B20C97400B479EE /* Profile */; };
+		88083D142B20C97400B479EE /* Home in Resources */ = {isa = PBXBuildFile; fileRef = 88083D122B20C97400B479EE /* Home */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		88083CF72B20C76C00B479EE /* FilmFlowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FilmFlowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88083CFB2B20C76C00B479EE /* FilmFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmFlowUITests.swift; sourceTree = "<group>"; };
 		88083CFD2B20C76C00B479EE /* FilmFlowUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmFlowUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		88083D112B20C97400B479EE /* Profile */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Profile; sourceTree = "<group>"; };
+		88083D122B20C97400B479EE /* Home */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Home; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,10 @@
 		88083CDF2B20C76A00B479EE /* FilmFlow */ = {
 			isa = PBXGroup;
 			children = (
+				88083D102B20C95200B479EE /* Modules */,
+				88083D0A2B20C7ED00B479EE /* Common */,
+				88083D0C2B20C7FC00B479EE /* Base */,
+				88083D0B2B20C7F500B479EE /* Navigation */,
 				88083CE02B20C76A00B479EE /* FilmFlowApp.swift */,
 				88083CE22B20C76A00B479EE /* ContentView.swift */,
 				88083CE42B20C76C00B479EE /* Assets.xcassets */,
@@ -125,6 +133,36 @@
 				88083CFD2B20C76C00B479EE /* FilmFlowUITestsLaunchTests.swift */,
 			);
 			path = FilmFlowUITests;
+			sourceTree = "<group>";
+		};
+		88083D0A2B20C7ED00B479EE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		88083D0B2B20C7F500B479EE /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		88083D0C2B20C7FC00B479EE /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		88083D102B20C95200B479EE /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				88083D122B20C97400B479EE /* Home */,
+				88083D112B20C97400B479EE /* Profile */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +269,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88083D132B20C97400B479EE /* Profile in Resources */,
+				88083D142B20C97400B479EE /* Home in Resources */,
 				88083CE82B20C76C00B479EE /* Preview Assets.xcassets in Resources */,
 				88083CE52B20C76C00B479EE /* Assets.xcassets in Resources */,
 			);
