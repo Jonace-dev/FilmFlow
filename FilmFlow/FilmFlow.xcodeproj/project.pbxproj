@@ -14,8 +14,18 @@
 		88083CF22B20C76C00B479EE /* FilmFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88083CF12B20C76C00B479EE /* FilmFlowTests.swift */; };
 		88083CFC2B20C76C00B479EE /* FilmFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88083CFB2B20C76C00B479EE /* FilmFlowUITests.swift */; };
 		88083CFE2B20C76C00B479EE /* FilmFlowUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88083CFD2B20C76C00B479EE /* FilmFlowUITestsLaunchTests.swift */; };
-		88083D132B20C97400B479EE /* Profile in Resources */ = {isa = PBXBuildFile; fileRef = 88083D112B20C97400B479EE /* Profile */; };
-		88083D142B20C97400B479EE /* Home in Resources */ = {isa = PBXBuildFile; fileRef = 88083D122B20C97400B479EE /* Home */; };
+		88083D2C2B20CB8F00B479EE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88083D272B20CB8E00B479EE /* HomeViewModel.swift */; };
+		88083D2D2B20CB8F00B479EE /* HomeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88083D282B20CB8E00B479EE /* HomeDataManager.swift */; };
+		88083D2E2B20CB8F00B479EE /* HomeApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88083D292B20CB8E00B479EE /* HomeApiClient.swift */; };
+		88083D2F2B20CB8F00B479EE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88083D2A2B20CB8F00B479EE /* HomeView.swift */; };
+		88083D302B20CB8F00B479EE /* HomeWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88083D2B2B20CB8F00B479EE /* HomeWireframe.swift */; };
+		88083D322B20CB9600B479EE /* MoviesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88083D312B20CB9600B479EE /* MoviesResponse.swift */; };
+		88083D382B20CBA200B479EE /* ProfileWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88083D332B20CBA100B479EE /* ProfileWireframe.swift */; };
+		88083D392B20CBA200B479EE /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88083D342B20CBA100B479EE /* ProfileView.swift */; };
+		88083D3A2B20CBA200B479EE /* ProfileAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88083D352B20CBA100B479EE /* ProfileAPIClient.swift */; };
+		88083D3B2B20CBA200B479EE /* ProfileDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88083D362B20CBA200B479EE /* ProfileDataManager.swift */; };
+		88083D3C2B20CBA200B479EE /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88083D372B20CBA200B479EE /* ProfileViewModel.swift */; };
+		88083D3F2B20CBC400B479EE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 88083D3E2B20CBC400B479EE /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +56,17 @@
 		88083CF72B20C76C00B479EE /* FilmFlowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FilmFlowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88083CFB2B20C76C00B479EE /* FilmFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmFlowUITests.swift; sourceTree = "<group>"; };
 		88083CFD2B20C76C00B479EE /* FilmFlowUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmFlowUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		88083D112B20C97400B479EE /* Profile */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Profile; sourceTree = "<group>"; };
-		88083D122B20C97400B479EE /* Home */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Home; sourceTree = "<group>"; };
+		88083D272B20CB8E00B479EE /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		88083D282B20CB8E00B479EE /* HomeDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDataManager.swift; sourceTree = "<group>"; };
+		88083D292B20CB8E00B479EE /* HomeApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeApiClient.swift; sourceTree = "<group>"; };
+		88083D2A2B20CB8F00B479EE /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		88083D2B2B20CB8F00B479EE /* HomeWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWireframe.swift; sourceTree = "<group>"; };
+		88083D312B20CB9600B479EE /* MoviesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesResponse.swift; sourceTree = "<group>"; };
+		88083D332B20CBA100B479EE /* ProfileWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileWireframe.swift; sourceTree = "<group>"; };
+		88083D342B20CBA100B479EE /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		88083D352B20CBA100B479EE /* ProfileAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileAPIClient.swift; sourceTree = "<group>"; };
+		88083D362B20CBA200B479EE /* ProfileDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileDataManager.swift; sourceTree = "<group>"; };
+		88083D372B20CBA200B479EE /* ProfileViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88083D3F2B20CBC400B479EE /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,10 +179,43 @@
 		88083D102B20C95200B479EE /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				88083D122B20C97400B479EE /* Home */,
-				88083D112B20C97400B479EE /* Profile */,
+				88083D172B20CAA600B479EE /* Profile */,
+				88083D162B20CAA100B479EE /* Home */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		88083D162B20CAA100B479EE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				88083D292B20CB8E00B479EE /* HomeApiClient.swift */,
+				88083D282B20CB8E00B479EE /* HomeDataManager.swift */,
+				88083D2A2B20CB8F00B479EE /* HomeView.swift */,
+				88083D272B20CB8E00B479EE /* HomeViewModel.swift */,
+				88083D2B2B20CB8F00B479EE /* HomeWireframe.swift */,
+				88083D1A2B20CAC300B479EE /* Model */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		88083D172B20CAA600B479EE /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				88083D352B20CBA100B479EE /* ProfileAPIClient.swift */,
+				88083D362B20CBA200B479EE /* ProfileDataManager.swift */,
+				88083D342B20CBA100B479EE /* ProfileView.swift */,
+				88083D372B20CBA200B479EE /* ProfileViewModel.swift */,
+				88083D332B20CBA100B479EE /* ProfileWireframe.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		88083D1A2B20CAC300B479EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				88083D312B20CB9600B479EE /* MoviesResponse.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +234,9 @@
 			dependencies = (
 			);
 			name = FilmFlow;
+			packageProductDependencies = (
+				88083D3E2B20CBC400B479EE /* Alamofire */,
+			);
 			productName = FilmFlow;
 			productReference = 88083CDD2B20C76A00B479EE /* FilmFlow.app */;
 			productType = "com.apple.product-type.application";
@@ -253,6 +309,9 @@
 				Base,
 			);
 			mainGroup = 88083CD42B20C76A00B479EE;
+			packageReferences = (
+				88083D3D2B20CBC400B479EE /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 88083CDE2B20C76A00B479EE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -269,8 +328,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88083D132B20C97400B479EE /* Profile in Resources */,
-				88083D142B20C97400B479EE /* Home in Resources */,
 				88083CE82B20C76C00B479EE /* Preview Assets.xcassets in Resources */,
 				88083CE52B20C76C00B479EE /* Assets.xcassets in Resources */,
 			);
@@ -298,6 +355,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				88083CE32B20C76A00B479EE /* ContentView.swift in Sources */,
+				88083D322B20CB9600B479EE /* MoviesResponse.swift in Sources */,
+				88083D392B20CBA200B479EE /* ProfileView.swift in Sources */,
+				88083D2E2B20CB8F00B479EE /* HomeApiClient.swift in Sources */,
+				88083D382B20CBA200B479EE /* ProfileWireframe.swift in Sources */,
+				88083D3B2B20CBA200B479EE /* ProfileDataManager.swift in Sources */,
+				88083D2C2B20CB8F00B479EE /* HomeViewModel.swift in Sources */,
+				88083D302B20CB8F00B479EE /* HomeWireframe.swift in Sources */,
+				88083D3A2B20CBA200B479EE /* ProfileAPIClient.swift in Sources */,
+				88083D2F2B20CB8F00B479EE /* HomeView.swift in Sources */,
+				88083D3C2B20CBA200B479EE /* ProfileViewModel.swift in Sources */,
+				88083D2D2B20CB8F00B479EE /* HomeDataManager.swift in Sources */,
 				88083CE12B20C76A00B479EE /* FilmFlowApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -617,6 +685,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		88083D3D2B20CBC400B479EE /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		88083D3E2B20CBC400B479EE /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88083D3D2B20CBC400B479EE /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 88083CD52B20C76A00B479EE /* Project object */;
 }
