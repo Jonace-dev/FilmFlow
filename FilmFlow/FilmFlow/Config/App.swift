@@ -11,7 +11,7 @@ import SwiftUI
 struct FilmFlowApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeWireframe().homeView
+            SplashWireframe().view
         }
     }
 }

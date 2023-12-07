@@ -83,7 +83,7 @@ class AppDelegate: NSObject, UIApplicationDelegate  {
     
     private func goToSplashView() {
         // Use SplashView as initial control view
-        let splashView: HomeView = HomeWireframe().homeView
+        let splashView: SplashView = SplashWireframe().view
       
         // Use a UIHostingController as window root view controller.
         let window = UIWindow(frame: UIScreen.main.bounds)
