@@ -16,7 +16,7 @@ class ProfileWireframe {
     
     static var path = "/profile"
     
-    var parameters: [String: Any]?
+    var parameters: [String: Any] = [:]
     
     var view: ProfileView {
         ProfileView(viewModel: viewModel)
@@ -36,7 +36,7 @@ class ProfileWireframe {
         ProfileAPIClient()
     }
     
-    func getView(parameters: [String: Any]? = nil) -> UIViewController {
+    func getView(parameters: [String: Any]) -> UIViewController {
         self.parameters = parameters
         return view.asUIViewController()
     }

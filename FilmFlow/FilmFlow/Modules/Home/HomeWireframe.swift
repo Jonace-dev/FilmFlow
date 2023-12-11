@@ -10,7 +10,7 @@ import UIKit
 class HomeWireframe {
     
     static var path = "/home"
-    var parameters: [String: Any]?
+    var parameters: [String: Any] = [:]
 
     var homeView: HomeView {
         HomeView(viewModel: homeViewModel)
@@ -30,7 +30,7 @@ class HomeWireframe {
         HomeApiClient()
     }
     
-    func getView(parameters: [String: Any]? = nil) -> UIViewController {
+    func getView(parameters: [String: Any]) -> UIViewController {
         self.parameters = parameters
         return homeView.asUIViewController()
     }

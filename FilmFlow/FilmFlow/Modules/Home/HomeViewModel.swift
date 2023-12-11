@@ -12,6 +12,7 @@ final class HomeViewModel: ObservableObject, RoutableViewModel {
    
     @Published internal var movieResponse: [TrendingMovie]?
     @Published var errorType: ErrorType?
+    @Published var user: UserChangeAccount?
     
     var homeDataManager: HomeDataManager?
     var cancellables = Set<AnyCancellable>()
@@ -21,12 +22,13 @@ final class HomeViewModel: ObservableObject, RoutableViewModel {
         registerRoutesToNavigate()
     }
     
-    func set(dataManager: HomeDataManager, parameters: [String: Any]? = nil) {
+    func set(dataManager: HomeDataManager, parameters: [String: Any]) {
         self.homeDataManager = dataManager
+        self.user = parameters["user"] as? UserChangeAccount
         print(parameters)
     }
     
-    func makeView(parameters: [String: Any]?) -> UIViewController {
+    func makeView(parameters: [String: Any]) -> UIViewController {
         HomeWireframe().getView(parameters: parameters)
     }
     

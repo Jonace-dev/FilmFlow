@@ -1,15 +1,15 @@
 
-
 import UIKit
 import Combine
 
-final class ProfileViewModel: ObservableObject, RoutableViewModel {
-  
+final class ChangeAccountViewModel: ObservableObject, RoutableViewModel {
+    
     // MARK: - Properties
     
-    private var dataManager: ProfileDataManager?
+    private var dataManager: ChangeAccountDataManager?
     var cancellables = Set<AnyCancellable>()
     var navigationInterceptionExecutionFlow: NavigationInterceptionFlow?
+    //@Published var comics: [String] = []
     
     // MARK: - Object lifecycle
     
@@ -17,22 +17,20 @@ final class ProfileViewModel: ObservableObject, RoutableViewModel {
         registerRoutesToNavigate()
     }
     
-    func set(dataManager: ProfileDataManager, parameters: [String: Any]) {
+    func set(dataManager: ChangeAccountDataManager, parameters: [String: Any]) {
         self.dataManager = dataManager
         print(parameters)
     }
     
     func makeView(parameters: [String: Any]) -> UIViewController {
-        ProfileWireframe().getView(parameters: parameters)
+        ChangeAccountWireframe().getView(parameters: parameters)
     }
     
     func registerRoutesToNavigate() {
-//        NavigationRouter.main.bind(routes: [
-//            NavigationRoute(path: ProfileWireframe.path, viewModelType: ProfileViewModel.self, requiresAuthentication: false)
-//        ])
+        NavigationRouter.main.bind(routes: [
+            NavigationRoute(path: HomeWireframe.path, viewModelType: HomeViewModel.self, requiresAuthentication: false)
+        ])
     }
-    
-    
     
     /* Call example with combine */
     
@@ -47,4 +45,5 @@ final class ProfileViewModel: ObservableObject, RoutableViewModel {
 //                self.comics = comics.response
 //            }).store(in: &cancellables)
 //    }
+    
 }

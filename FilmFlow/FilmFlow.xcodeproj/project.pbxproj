@@ -72,6 +72,15 @@
 		88083DB02B21DD2100B479EE /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 88083DAF2B21DD2100B479EE /* Lottie */; };
 		88083DB32B21DD5900B479EE /* splash.json in Resources */ = {isa = PBXBuildFile; fileRef = 88083DB22B21DD5900B479EE /* splash.json */; };
 		88083DB62B21DDDF00B479EE /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88083DB52B21DDDF00B479EE /* LottieView.swift */; };
+		88E0E2212B23192F002113DE /* ChangeAccountAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E0E21C2B23192F002113DE /* ChangeAccountAPIClient.swift */; };
+		88E0E2222B23192F002113DE /* ChangeAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E0E21D2B23192F002113DE /* ChangeAccountView.swift */; };
+		88E0E2232B23192F002113DE /* ChangeAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E0E21E2B23192F002113DE /* ChangeAccountViewModel.swift */; };
+		88E0E2242B23192F002113DE /* ChangeAccountDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E0E21F2B23192F002113DE /* ChangeAccountDataManager.swift */; };
+		88E0E2252B23192F002113DE /* ChangeAccountWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E0E2202B23192F002113DE /* ChangeAccountWireframe.swift */; };
+		88E0E2272B232784002113DE /* OLAImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E0E2262B232784002113DE /* OLAImage.swift */; };
+		88E0E22A2B232D5C002113DE /* UserChangeAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E0E2292B232D5C002113DE /* UserChangeAccount.swift */; };
+		88E0E22C2B233214002113DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88E0E22B2B233214002113DE /* LaunchScreen.storyboard */; };
+		88E0E2302B271E66002113DE /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E0E22F2B271E66002113DE /* AccountCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -158,6 +167,16 @@
 		88083D9D2B21D56100B479EE /* SplashWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashWireframe.swift; sourceTree = "<group>"; };
 		88083DB22B21DD5900B479EE /* splash.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = splash.json; sourceTree = "<group>"; };
 		88083DB52B21DDDF00B479EE /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		88E0E21C2B23192F002113DE /* ChangeAccountAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAccountAPIClient.swift; sourceTree = "<group>"; };
+		88E0E21D2B23192F002113DE /* ChangeAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAccountView.swift; sourceTree = "<group>"; };
+		88E0E21E2B23192F002113DE /* ChangeAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAccountViewModel.swift; sourceTree = "<group>"; };
+		88E0E21F2B23192F002113DE /* ChangeAccountDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAccountDataManager.swift; sourceTree = "<group>"; };
+		88E0E2202B23192F002113DE /* ChangeAccountWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAccountWireframe.swift; sourceTree = "<group>"; };
+		88E0E2262B232784002113DE /* OLAImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLAImage.swift; sourceTree = "<group>"; };
+		88E0E2292B232D5C002113DE /* UserChangeAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserChangeAccount.swift; sourceTree = "<group>"; };
+		88E0E22B2B233214002113DE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		88E0E22D2B23324E002113DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		88E0E22F2B271E66002113DE /* AccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +229,7 @@
 		88083CDF2B20C76A00B479EE /* FilmFlow */ = {
 			isa = PBXGroup;
 			children = (
+				88E0E22D2B23324E002113DE /* Info.plist */,
 				88083D402B20CD0B00B479EE /* Config */,
 				88083D0A2B20C7ED00B479EE /* Common */,
 				88083D0C2B20C7FC00B479EE /* Base */,
@@ -287,6 +307,7 @@
 		88083D102B20C95200B479EE /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				88E0E21B2B231910002113DE /* ChangeAccount */,
 				88083D982B21D54500B479EE /* SplashScreen */,
 				88083D172B20CAA600B479EE /* Profile */,
 				88083D162B20CAA100B479EE /* Home */,
@@ -402,6 +423,7 @@
 			children = (
 				88083D852B20D0DC00B479EE /* OLAIcon.swift */,
 				88083D842B20D0DC00B479EE /* OLAText.swift */,
+				88E0E2262B232784002113DE /* OLAImage.swift */,
 			);
 			path = Icon;
 			sourceTree = "<group>";
@@ -429,6 +451,7 @@
 				88083D9B2B21D56100B479EE /* SplashViewModel.swift */,
 				88083D9C2B21D56100B479EE /* SplashDataManager.swift */,
 				88083D9D2B21D56100B479EE /* SplashWireframe.swift */,
+				88E0E22B2B233214002113DE /* LaunchScreen.storyboard */,
 			);
 			path = SplashScreen;
 			sourceTree = "<group>";
@@ -457,6 +480,36 @@
 			children = (
 			);
 			path = Animations;
+			sourceTree = "<group>";
+		};
+		88E0E21B2B231910002113DE /* ChangeAccount */ = {
+			isa = PBXGroup;
+			children = (
+				88E0E22E2B271E43002113DE /* View */,
+				88E0E2282B232D47002113DE /* Model */,
+				88E0E21C2B23192F002113DE /* ChangeAccountAPIClient.swift */,
+				88E0E21D2B23192F002113DE /* ChangeAccountView.swift */,
+				88E0E21E2B23192F002113DE /* ChangeAccountViewModel.swift */,
+				88E0E21F2B23192F002113DE /* ChangeAccountDataManager.swift */,
+				88E0E2202B23192F002113DE /* ChangeAccountWireframe.swift */,
+			);
+			path = ChangeAccount;
+			sourceTree = "<group>";
+		};
+		88E0E2282B232D47002113DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				88E0E2292B232D5C002113DE /* UserChangeAccount.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		88E0E22E2B271E43002113DE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				88E0E22F2B271E66002113DE /* AccountCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -574,6 +627,7 @@
 				88083CE82B20C76C00B479EE /* Preview Assets.xcassets in Resources */,
 				88083DB32B21DD5900B479EE /* splash.json in Resources */,
 				88083D492B20CE0D00B479EE /* Config.plist in Resources */,
+				88E0E22C2B233214002113DE /* LaunchScreen.storyboard in Resources */,
 				88083CE52B20C76C00B479EE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -600,6 +654,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				88083D4D2B20CE3500B479EE /* BaseError.swift in Sources */,
+				88E0E2242B23192F002113DE /* ChangeAccountDataManager.swift in Sources */,
+				88E0E2232B23192F002113DE /* ChangeAccountViewModel.swift in Sources */,
 				88083D322B20CB9600B479EE /* MoviesResponse.swift in Sources */,
 				88083D5D2B20CEE800B479EE /* NavigationRouter+ErrorHandling.swift in Sources */,
 				88083D5B2B20CEE800B479EE /* NavigationRouter+PathMatcher.swift in Sources */,
@@ -613,6 +669,7 @@
 				88083D652B20CF6D00B479EE /* RouterAuthenticationHandler.swift in Sources */,
 				88083D7F2B20D0D300B479EE /* LayoutSpacing.swift in Sources */,
 				88083D392B20CBA200B479EE /* ProfileView.swift in Sources */,
+				88E0E2272B232784002113DE /* OLAImage.swift in Sources */,
 				88083D9E2B21D56100B479EE /* SplashAPIClient.swift in Sources */,
 				88083D822B20D0D300B479EE /* Colors+Style.swift in Sources */,
 				88083D6C2B20CF7400B479EE /* View+UIHostingController.swift in Sources */,
@@ -625,6 +682,7 @@
 				88083D6E2B20CF7B00B479EE /* NavigationRoute.swift in Sources */,
 				88083D682B20CF6D00B479EE /* RoutableView.swift in Sources */,
 				88083D5E2B20CEE800B479EE /* NavigationRouter+NavigationInterception.swift in Sources */,
+				88E0E2212B23192F002113DE /* ChangeAccountAPIClient.swift in Sources */,
 				88083D972B20D0E300B479EE /* OLAStateRoundButton.swift in Sources */,
 				88083D802B20D0D300B479EE /* Text+Style.swift in Sources */,
 				88083D3B2B20CBA200B479EE /* ProfileDataManager.swift in Sources */,
@@ -644,6 +702,7 @@
 				88083DA12B21D56100B479EE /* SplashDataManager.swift in Sources */,
 				88083D922B20D0E300B479EE /* OLABiometricsButton.swift in Sources */,
 				88083D3C2B20CBA200B479EE /* ProfileViewModel.swift in Sources */,
+				88E0E2222B23192F002113DE /* ChangeAccountView.swift in Sources */,
 				88083D2D2B20CB8F00B479EE /* HomeDataManager.swift in Sources */,
 				88083D5A2B20CEE800B479EE /* NavigationRouter+PrivateHelpers.swift in Sources */,
 				88083D962B20D0E300B479EE /* OLAMotionButton.swift in Sources */,
@@ -651,7 +710,10 @@
 				88083D942B20D0E300B479EE /* OLARoundedButton.swift in Sources */,
 				88083D782B20D0CB00B479EE /* TransitionOptions.swift in Sources */,
 				88083CE12B20C76A00B479EE /* App.swift in Sources */,
+				88E0E2302B271E66002113DE /* AccountCell.swift in Sources */,
 				88083D832B20D0D300B479EE /* Font+Style.swift in Sources */,
+				88E0E2252B23192F002113DE /* ChangeAccountWireframe.swift in Sources */,
+				88E0E22A2B232D5C002113DE /* UserChangeAccount.swift in Sources */,
 				88083DA02B21D56100B479EE /* SplashViewModel.swift in Sources */,
 				88083D912B20D0E300B479EE /* OLAFloatingButton.swift in Sources */,
 				88083D4F2B20CE4100B479EE /* APIError.swift in Sources */,
@@ -816,9 +878,10 @@
 				DEVELOPMENT_TEAM = S995AAJ8H2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
+				INFOPLIST_FILE = FilmFlow/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -846,9 +909,10 @@
 				DEVELOPMENT_TEAM = S995AAJ8H2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
+				INFOPLIST_FILE = FilmFlow/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

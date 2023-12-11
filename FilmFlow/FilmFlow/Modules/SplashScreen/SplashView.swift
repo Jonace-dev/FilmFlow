@@ -5,7 +5,7 @@ import Lottie
 struct SplashView: View {
     
     @ObservedObject private var viewModel: SplashViewModel
-    @State private var rootPath: String = HomeWireframe.path
+    @State private var rootPath: String = ChangeAccountWireframe.path
     
     init(viewModel: SplashViewModel) {
         self.viewModel = viewModel

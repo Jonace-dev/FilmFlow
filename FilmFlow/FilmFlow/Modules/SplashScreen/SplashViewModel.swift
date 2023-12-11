@@ -17,18 +17,18 @@ final class SplashViewModel: ObservableObject, RoutableViewModel {
         registerRoutesToNavigate()
     }
     
-    func set(dataManager: SplashDataManager, parameters: [String: Any]? = nil) {
+    func set(dataManager: SplashDataManager, parameters: [String: Any]) {
         self.dataManager = dataManager
         print(parameters)
     }
     
-    func makeView(parameters: [String: Any]?) -> UIViewController {
+    func makeView(parameters: [String: Any]) -> UIViewController {
         SplashWireframe().getView(parameters: parameters)
     }
     
     func registerRoutesToNavigate() {
         NavigationRouter.main.bind(routes: [
-            NavigationRoute(path: HomeWireframe.path, viewModelType: HomeViewModel.self, requiresAuthentication: false)
+            NavigationRoute(path: ChangeAccountWireframe.path, viewModelType: ChangeAccountViewModel.self, requiresAuthentication: false)
         ])
     }
     

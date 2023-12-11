@@ -23,7 +23,7 @@ public protocol RoutableViewModel {
     // MARK: - View builder
     
     /// Makes view from view model
-    func makeView(parameters: [String: Any]?) -> UIViewController
+    func makeView(parameters: [String: Any]) -> UIViewController
 }
 
 extension RoutableViewModel {
