@@ -12,10 +12,11 @@ struct AccountCell: View {
     let user: UserChangeAccount
     
     var body: some View {
-        VStack {
-            OLAImage(user.image, size: .large)
+        VStack(spacing: 10) {
+            OLAImage(user.image, size: .extraLarge)
+                .clipShape(.rect(cornerRadius: 10))
             Text(user.username)
-                .font(.bold(size: 20))
+                .font(.regular(size: 18))
                 .foregroundStyle(Color.secondaryWhite)
         }
     }

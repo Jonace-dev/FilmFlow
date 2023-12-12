@@ -22,11 +22,11 @@ internal enum Fonts: CaseIterable {
     internal var fontName: String {
         switch self {
         case .regular:
-            return "SeatBcn-Web-Medium"
+            return "Roboto-Regular"
         case .medium:
-            return "SeatBcn-Web-Regular"
+            return "Roboto-Medium"
         case .bold:
-            return "SeatBcn-Web-Bold"
+            return "Roboto-Bold"
         }
     }
 }
@@ -55,8 +55,16 @@ extension UIFont {
     
     // MARK: - OLAFont - Custom funcs to return fonts
     
+    internal static func olaNavigationTitle() -> UIFont {
+        UIFont(name: Fonts.bold.fontName, size: 20)!
+    }
+    
     internal static func olaNavigationLargeTitle() -> UIFont {
         UIFont(name: Fonts.bold.fontName, size: 24)!
+    }
+    
+    internal static func regular(size: CGFloat) -> UIFont {
+        UIFont(name: Fonts.regular.fontName, size: size)!
     }
     
 }

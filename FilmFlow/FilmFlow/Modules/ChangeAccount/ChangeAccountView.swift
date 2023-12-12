@@ -17,7 +17,7 @@ struct ChangeAccountView: View {
             Color.backgroundDark.ignoresSafeArea(.all)
             VStack(alignment: .center) {
                 
-                LazyVGrid(columns: twoColumnGrid, spacing: 30) {
+                LazyVGrid(columns: twoColumnGrid, spacing: 40) {
                     ForEach(usersChangeAccount, id: \.self) { user in
                         AccountCell(user: user)
                             .onTapGesture {
@@ -29,7 +29,10 @@ struct ChangeAccountView: View {
                     }
                 }
             }
-            .padding(.horizontal, LayoutSpacing.max)
+            .padding(.bottom, LayoutSpacing.max)
+            .navigationBarBackButtonHidden(true)
+            .olaNavigationBar("¿Quien eres? Elige tu perfil", displayMode: .inline)
+            .padding(.horizontal, LayoutSpacing.ultraMax)
         }
     }
 }

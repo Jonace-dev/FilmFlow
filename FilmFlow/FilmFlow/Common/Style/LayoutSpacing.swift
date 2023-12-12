@@ -27,6 +27,8 @@ public enum LayoutSpacing {
     public static let extraLarge: CGFloat = 32
     public static let ultraLarge: CGFloat = 40
     public static let max: CGFloat = 50
+    public static let extraMax: CGFloat = 60
+    public static let ultraMax: CGFloat = 70
     
     public static var verticalTextFieldSpacing: CGFloat {
        return LayoutSpacing.extraSmall

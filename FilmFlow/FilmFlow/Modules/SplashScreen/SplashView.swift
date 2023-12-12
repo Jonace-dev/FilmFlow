@@ -20,8 +20,9 @@ struct SplashView: View {
                         navigateToRootView()
                     }
                 })
-                .scaleEffect(0.6)
+                .scaleEffect(0.9)
             }
+            .navigationBarHidden(true)
             .frame(width: UIScreen.main.bounds.width, alignment: .center)
             .edgesIgnoringSafeArea(.vertical)
         }
@@ -32,7 +33,7 @@ struct SplashView: View {
     private func navigateToRootView() {
         // Navigate to home once route is available
         if isAnyActiveSceneReady() {
-            NavigationRouter.main.navigate(toPath: rootPath, replace: true)
+            NavigationRouter.main.navigate(toPath: rootPath)
         }
     }
     

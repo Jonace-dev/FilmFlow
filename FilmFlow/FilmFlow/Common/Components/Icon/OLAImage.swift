@@ -10,9 +10,10 @@ import SwiftUI
 public enum OLAIconImage: CGFloat {
     case small = 20
     case medium = 50
+    case large = 70
     case largeSmall = 80
     case largeMedium = 100
-    case large = 120
+    case extraLarge = 110
 }
 
 public struct OLAImage: View {

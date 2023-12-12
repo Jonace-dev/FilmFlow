@@ -16,11 +16,15 @@ struct HomeView: View {
     }
     
     var body: some View {
-        VStack {
-            Text("Hola mundo")
+        ZStack {
+            //Color.backgroundDark.ignoresSafeArea(.all)
             
-        }.onAppear {
-            viewModel.getTrendingMovies()
+            VStack {
+                Text("Home")
+            }
+            .onAppear {
+                viewModel.getTrendingMovies()
+            }
         }
     }
 }

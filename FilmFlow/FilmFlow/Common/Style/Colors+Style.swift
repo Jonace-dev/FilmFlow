@@ -28,4 +28,19 @@ extension Color {
     }
 }
 
+extension UIColor {
+    
+    public static var primaryBrand: UIColor {
+        UIColor(named: Colors.primaryBrand.rawValue, in: Bundle.main, compatibleWith: nil) ?? UIColor()
+    }
+    
+    public static var secondaryWhite: UIColor {
+        UIColor(named: Colors.secondaryWhite.rawValue, in: Bundle.main, compatibleWith: nil) ?? UIColor()
+    }
+    
+    public static var backgroundDark: UIColor {
+        UIColor(named: Colors.backgroundDark.rawValue, in: Bundle.main, compatibleWith: nil) ?? UIColor()
+    }
+}
+
 

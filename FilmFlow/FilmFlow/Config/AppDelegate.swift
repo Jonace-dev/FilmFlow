@@ -34,6 +34,9 @@ class AppDelegate: NSObject, UIApplicationDelegate  {
 //        Style.configTextFields()
 //        Style.configLoading()
         
+        Theme.apply()
+        Theme.registerFonts()
+        
         goToSplashView()
       
         return true
