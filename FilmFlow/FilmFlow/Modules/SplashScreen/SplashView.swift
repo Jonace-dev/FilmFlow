@@ -33,7 +33,7 @@ struct SplashView: View {
     private func navigateToRootView() {
         // Navigate to home once route is available
         if isAnyActiveSceneReady() {
-            NavigationRouter.main.navigate(toPath: rootPath)
+            NavigationRouter.main.navigate(toPath: rootPath, replace: true)
         }
     }
     

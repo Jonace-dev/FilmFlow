@@ -23,14 +23,13 @@ struct ChangeAccountView: View {
                             .onTapGesture {
                                 NavigationRouter.main.navigate(toPath: HomeWireframe.path, withParameters: [
                                     "user": user
-                                ])
+                                ], replace: true)
                             }
                             
                     }
                 }
             }
             .padding(.bottom, LayoutSpacing.max)
-            .navigationBarBackButtonHidden(true)
             .olaNavigationBar("¿Quien eres? Elige tu perfil", displayMode: .inline)
             .padding(.horizontal, LayoutSpacing.ultraMax)
         }
